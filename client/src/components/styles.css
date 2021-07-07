@@ -3,16 +3,69 @@
 h3 {
     color: black;
     font-family: 'Otomanopee One', sans-serif;
+    margin-bottom: 2rem;
+}
+
+h5 {
+    margin: 0;
+}
+
+input {
+    margin-bottom: 2rem;
+}
+
+.form {
+    align-items: center;
 }
 
 .container {
     background-color: rgb(83, 209, 121);
-    padding: 5rem;
+    padding: 2rem;
     position: absolute;
     top: 20%;
-    left: 32%;
+    left: 35%;
     box-shadow: -0.2em 0.5rem 0.4em rgb(122, 158, 144);
     border-radius: 5px;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 10px 0px 10px 100px;
+    text-align: center;
+    display: flex;
+    width: 15rem;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.btn {
+    background-color: #173518;
+    
+}
+
+.btn:hover {
+    background-color: rgb(63, 170, 95);
+}
+
+.btn-red {
+    background-color: #f32c2c;
+    padding: 10px 0px 10px 70px;
+}
+
+.btn-red:hover {
+    background-color: rgb(156, 48, 48);
+}
+
+.input-login {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width:800px) {
