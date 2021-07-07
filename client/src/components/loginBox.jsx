@@ -6,14 +6,16 @@ import './styles.css'
 //validation improts
 import { logInValidation } from '../assets/utils/loginValidations';
 import { logIn } from '../actions/logInActions';
+import ResetPassword from './ResetPasswordModal/ResetPassword';
 
 function LoginBox() {
+    const dispatch = useDispatch()
     const [formInputs, setFormInputs] = useState({
         userName: '',
         password: '',
     });
     const [errorsArray, setErrorsArray] = useState([])
-    const dispatch = useDispatch()
+    const [showResetPassword, setShowResetPassword] = useState(false)
     
     const handleInputChange = function (e) {
         setFormInputs({
@@ -33,7 +35,7 @@ function LoginBox() {
     }
 
     const resetPassword = () => {
-        console.log('modal')
+        setShowResetPassword(!showResetPassword);
     }
 
     return (
@@ -62,18 +64,19 @@ function LoginBox() {
             >
                 Login
             </button>
-            <button
-            className='btn-red'
-            onClick={() => resetPassword()}
-            >
-                Reset Password
-            </button>
         </form>
             {
                 errorsArray && errorsArray.map(e => {
                     return <h5>- {e}</h5>
                 })
             }
+            <button
+                className='btn-red'
+                onClick={() => resetPassword()}
+            >
+                Reset Password
+            </button>
+            <ResetPassword setShow={setShowResetPassword} show={showResetPassword}/>
     </div>
     )
 }

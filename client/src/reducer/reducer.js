@@ -32,6 +32,13 @@ const authenticationReducer = (state = initialState, action = {}) => {
                 user: action.payload,
             }
         }
+        case 'RESET_PASS': {
+            return {
+                ...state,
+                logged: true,
+                user: action.payload,
+            }
+        }
         default:
             return {
                 ...state
