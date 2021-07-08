@@ -5,9 +5,9 @@ import {
 import {
     composeWithDevTools
 } from 'redux-devtools-extension';
-import authenticationReducer from "../reducer/reducer";
+import reducer from "../reducer/reducer";
 import thunk from "redux-thunk";
 
-const store = createStore(authenticationReducer, composeWithDevTools(applyMiddleware(thunk)));
+const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 
 export default store

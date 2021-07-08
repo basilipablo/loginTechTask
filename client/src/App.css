@@ -16,6 +16,19 @@
   left: 2px;
   background-color: rgb(86, 87, 86);
   width: 20%;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem;
+}
+
+.small-sign {
+  color: white;
+  font-size: xx-small;
+}
+
+.eurousd-header {
+  width: 100px;
 }
 
 @media screen and (max-width:800px) {
@@ -26,6 +39,12 @@
   .stocks-box {
     padding: 10px;
     width: 30%;
+  }
+  .eurousd-header {
+    display: none;
+  }
+  .stocks-box {
+    width: 45%;
   }
 }
 
