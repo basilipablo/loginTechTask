@@ -3,13 +3,13 @@
     padding: 2rem;
     position: absolute;
     top: 20%;
-    left: 35%;
+    left: 25%;
     box-shadow: -0.2em 0.5rem 0.4em rgb(122, 158, 144);
     border-radius: 5px;
 }
 
 .img-meme {
-    width: 35px;
+    width: 600px;
 }
 
 @media screen and (max-width:800px) {

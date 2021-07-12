@@ -9,6 +9,11 @@
   background-color: rgb(63, 170, 95);
   width: 20%;
 }
+.screen-button:hover {
+  color: #173518;
+  box-shadow: 1px 1px #173518;
+  cursor: pointer;
+}
 
 .stocks-box {
   position: absolute;
@@ -20,6 +25,7 @@
   border-radius: 5px;
   color: white;
   padding: 1rem;
+  box-shadow: -0.2em 0.5rem 0.4em rgb(122, 158, 144);
 }
 
 .small-sign {
