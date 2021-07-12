@@ -1,3 +1,8 @@
+<p align='right'>     
+    <img src='https://i.pinimg.com/originals/07/10/67/071067d0181b02da0518ab2be33b1b7f.jpg' height="150" 
+    style= "border-radius: 5px"/> 
+</p>  
+
 # Pablo Basili's Login Page
 
 Welcome and thanks for downloading this quick Technical task for Front-End Developer.
